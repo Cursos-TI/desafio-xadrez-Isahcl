@@ -51,8 +51,7 @@ int main() {
         printf("Direita\n");
         conthorizontal++;
     }
-      return 0;
-    }
+      
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
@@ -60,6 +59,62 @@ int main() {
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
-
+      
+    void moverbispo(int casas){
+        if (casas == 0){
+            return;
+        }
     
+      printf("Diagonal superior direita\n");
+      moverbispo(casas - 1);
+    }
+
+    void movertorre(int casas){
+         if (casa == 0){
+           return;
+         }
+         printf("Direita\n");
+         movertorre(casas - 1);
+    }
+     
+    void moverrainha(int casas){
+        if (casas = 0){
+            return;
+        }
+        printf("Esquerda\n");
+        moverrainha(casas - 1);
+        }
+    
+        int main(){
+            printf("Movimento torre\n");
+            movertorre(5);
+
+            printf("\n Movimento bispo\n");
+            moverbispo(5);
+
+            printf("\n Movimento rainha\n");
+            moverrainha(8);
+
+            printf("\n Movimento cavalo\n");
+
+
+            for (int vertical = 1; vertical <= 2; vertical++){
+                if (vertical == 0){
+                    continue;
+                }
+                printf("Cima\n");
+            
+                for(int horizontal = 1; horizontal <= 1; horizontal++){
+                    printf("Direita\n");
+
+                    if (horizontal == 1){
+                        break;
+                    }
+                }
+            }
+        }
+    return 0;
+
+    }
+
 
